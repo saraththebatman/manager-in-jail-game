@@ -1,0 +1,110 @@
+/* Overall Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    overflow: hidden;
+  }
+  
+  /* Game Container */
+  #game-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url('https://i.imgur.com/n2grlADb.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Title */
+  h1 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 28px;
+  }
+  
+  /* Scoreboard */
+  #scoreboard {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 18px;
+  }
+  
+  .score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .score span:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffcc00; /* Gold color for labels */
+  }
+  
+  .score span:last-child {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Manager (Fat Guy) */
+  #manager {
+    width: 120px;
+    height: 120px;
+    background-image: url('https://i.imgur.com/HT1IOzZ.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    cursor: grab;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transition: transform 0.1s;
+  }
+  
+  /* Jail (Bigger and Centered) */
+  #jail {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #000;
+    position: absolute;
+    top: calc(50% - 100px); /* Centers vertically */
+    left: calc(50% - 100px); /* Centers horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    z-index: 5;
+  }
+  
+  #jail p {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .jail-highlight {
+    background-color: #ffcccb;
+    transition: background-color 0.3s ease;
+  }
+  
